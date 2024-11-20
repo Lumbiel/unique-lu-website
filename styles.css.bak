@@ -1,0 +1,304 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Courier, monospace;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url("C:/Users/lumbi/Documents/images/homepage wallpaper.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin: 0;
+	line-height: 1.6;
+}
+footer{
+	width: 100%;
+    background-color: #765341;
+	display: flex;
+	align-items: center;
+}
+h1{
+	font-size:60px;
+}
+
+h1,h2 {
+	margin: 20px 0;
+}
+
+p {
+	line-height: 1.6;
+}
+	
+
+/*Header styling*/
+header{
+	display:flex;
+	width: 100%;
+    background-color: #765341;
+	padding 10px 0;
+	align-items: center;
+	}
+	
+.logo{
+	margin: 0 0;
+}
+.logo img{
+	max-width:150px;
+}
+
+nav {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+	
+	padding: 2px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+	
+}
+
+.nav-links{
+	display:flex;
+	gap: 20px;
+	list-style: none;
+	align-items: center;
+	justify-content:flex-start;
+	margin-left:15px;
+}
+
+.nav-links li{
+	margin: 0 15px;
+}
+
+.nav-links a{
+	text-decoration: none;
+	padding: 10px 20px;
+	background-color:#bca89f;
+	color: black;
+	border-radius: 20px;
+	border: 2px solid #5b3e31;
+	transition: 0.3s;
+	font-family: Courier, monospace;
+}
+
+.nav-links a:hover {
+	background-color: #5b3e31;
+	border-color: #bca89f;
+	color: #fff;
+}
+.social-media {
+	display:flex;
+	margin-left: 10px;
+	list-style: none;
+	align-items: center;
+	justify-content:space-between;
+}
+
+.social-media a {
+    text-decoration: none;
+	padding: 10px 20px;
+	background-color:#bca89f;
+	color: black;
+	border-radius: 20px;
+	border: 2px solid #5b3e31;
+	transition: 0.3s;
+	font-family: Courier, monospace;
+	margin-left:15px;
+} 
+
+section{
+	margin-bottom:20px;
+}
+
+/* Home styling*/
+main {
+	width: 100%;
+	max-width: 800px;
+	text-align: center;
+	padding: 40px 20px;
+	margin: 0 auto;
+}
+
+#home{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: -10px;
+}
+
+#about-us {
+  padding-top: 50px;
+  }
+
+
+
+/*Services styling*/
+table {
+	width: 90%;
+	background-color: #f8e8e0;
+	margin: 20px auto;	
+	border-collapse: separate;
+	border-radius: 30px;
+	border: 3px solid #765341;
+	overflow: hidden;
+}
+
+table, th, td{
+	border: 2px solid #765341;
+	padding:8px;
+	text-align:center;
+}
+
+td, th {
+	border-left: none;
+	border-left: none;
+	
+}
+
+.product-image {
+	width: 700px;
+	height: auto;
+	max-width: 100%;
+	border-radius: 10px;
+}
+
+
+
+
+/* Contact form styling */
+main {
+    padding: 40px 20px;
+}
+
+#contact h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+	border: 2px solid #5b3e31;
+	font-family: Courier, monospace;
+	margin-bottom: 10px;
+}
+
+form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+form button {
+    padding: 10px;
+    background-color: #8b5d33;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #70472a;
+}
+
+.success-message{
+	color: brown;
+	margin-top: 20px;
+	display:none;
+}
+
+
+
+/* Staff styling */
+@media(max-width: 768px) {
+.staff-grid {
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	padding: 20px;
+}
+}
+
+.staff-grid {
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	padding: 20px;
+}
+
+.staff-member{
+	background-color:#f8e8e0;
+	width: 100%;
+	height: 300px;
+	aspect-ratio: 1 / 1;
+	padding:20px;
+	text-align:center;
+	border-radius:10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0,1);
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content:center;
+	box-sizing: border-box;
+	position: relative;
+	overflow:hidden;
+}
+
+.staff-photo{
+	width:70%;
+	height:200px;
+	border: 2px solid #765341;
+	border-radius:50%;
+	margin-bottom:10px;
+	object-fit:cover;
+}
+.staff-member p {
+	font-size: 1em;
+	margin:0;
+}
+
+.bio {
+	position: absolute;
+	bottom:0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	padding: 10px;
+	text-align: center;
+	display: none;
+}
+

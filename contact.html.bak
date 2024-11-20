@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Lu | Contact Us</title>
+	  <link rel="icon" type="image/png" href="C:\Users\lumbi\Documents\images\unique lu logo.png">
+  <link rel="stylesheet" href="C:\Users\lumbi\Documents\Unique Lu\website css\styles.css">
+<body>
+
+
+<header>
+       <nav>
+	      <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+		<div class="logo">
+        <img src="C:\Users\lumbi\Documents\images\unique lu logo.png" alt="Unique Lu logo">
+        </div>
+        <li><a href="staff.html">Staff</a></li>
+      </ul>
+      
+      <div class="social-media">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+      </div>
+    </div>
+       </nav>
+	</header>
+
+  <section id="contact">
+    <h2 style="text-align:center">Contact Us</h2>
+        <p>Use our contact form to easily send your inquiries directly to us via email.</p><br>
+    
+	<div class="contact-info">    
+        <p><strong>Email: </strong>uniquelu.com</p>
+    </div>
+
+
+    <form id="contact-form" method="POST" onsubmit="return validate(event)">
+            <div class="form-group">
+                    <input type="text" id="name" name="first-name" placeholder="Name *" required>
+					<input type="email" id="email" name="email" placeholder="Email *" required>
+                    <input type="text" name="last-name" placeholder="Subject"> 
+            </div>
+            <textarea name="message" placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+    </form> 
+	
+	   <div class="success-message" id="success-message">Your message sent successfully!</div>
+  </section>
+</main>
+
+<footer>
+	   <p><span id="current-date"></span></p>
+        <p>&copy; 2023 Unique Lu. Crafted with Love and Yarn.</p>
+	</footer>
+<script src="website javascript/scripts.js"></script>
+</body>
+</html>
