@@ -42,3 +42,11 @@ function hideBio(member) {
     const bio = member.querySelector('.bio');
     bio.style.display = 'none';
     }
+
+//Page preloader
+function preloader() {
+	var loader = document.getElementById("preloader");
+	window.addEventListener("load",function(){
+		loader.style.display = "none";
+	})
+	}

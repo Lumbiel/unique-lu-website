@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div id="preloader">
+
+  </div>
 <header>
        <nav>
 	      <div class="nav-container">
@@ -49,5 +52,16 @@
 	</footer>
 	
 	<script src="scripts.js"></script>
+
+  <script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function() {
+      loader.style.display = "none";
+      });
+  </script>
+
+
+
+
 </body>
 </html>
