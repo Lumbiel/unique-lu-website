@@ -45,6 +45,9 @@ function hideBio(member) {
 
 //Page preloader
 var loader = document.getElementById("preloader");
-    window.addEventListener("load", function() {
-      loader.style.display = "none";
-      });
+
+window.addEventListener("load", function() {
+  setTimeout(function() {
+    loader.style.display = "none";
+  }, 1000); // 1000 milliseconds = 1 seconds
+});
