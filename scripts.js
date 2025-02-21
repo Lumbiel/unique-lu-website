@@ -42,3 +42,12 @@ function hideBio(member) {
     const bio = member.querySelector('.bio');
     bio.style.display = 'none';
     }
+
+//Page preloader
+var loader = document.getElementById("preloader");
+
+window.addEventListener("load", function() {
+  setTimeout(function() {
+    loader.style.display = "none";
+  }, 1000); // 1000 milliseconds = 1 seconds
+});
